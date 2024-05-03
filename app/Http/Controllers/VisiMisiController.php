@@ -37,7 +37,7 @@ class VisiMisiController extends Controller
         ]);
 
 
-        return redirect()->route('visimisis')->with('successVisi', 'Data photo berhasil disimpan!');
+        return redirect()->route('visimisis')->with('successVisi', 'Data misi berhasil disimpan!');
     }
 
     public function storeMisi(Request $request)
@@ -56,7 +56,7 @@ class VisiMisiController extends Controller
             'misi' => $request->misi,
         ]);
 
-        return redirect()->route('visimisis')->with('successMisi', 'Data photo berhasil disimpan!');
+        return redirect()->route('visimisis')->with('successMisi', 'Data misi berhasil disimpan!');
     }
 
     public function updateVisi(Request $request, $id)
@@ -77,7 +77,7 @@ class VisiMisiController extends Controller
             'visi' => $request->visi,
         ]);
 
-        return redirect()->route('visimisis')->with('successVisi', 'Data photo berhasil disimpan!');
+        return redirect()->route('visimisis')->with('successVisi', 'Data misi berhasil disimpan!');
     }
 
     public function updateMisi(Request $request, $id)
@@ -98,7 +98,7 @@ class VisiMisiController extends Controller
             'misi' => $request->misi,
         ]);
 
-        return redirect()->route('visimisis')->with('successMisi', 'Data photo berhasil disimpan!');
+        return redirect()->route('visimisis')->with('successMisi', 'Data misi berhasil disimpan!');
     }
 
     public function destroyVisi($id)
@@ -106,13 +106,13 @@ class VisiMisiController extends Controller
         $visi = Visi::find($id);
 
         $visi->delete();
-        return redirect()->route('visimisis')->with('successVisi', 'Data video berhasil dihapus!');
+        return redirect()->route('visimisis')->with('successVisi', 'Data visi berhasil dihapus!');
     }
     public function destroyMisi($id)
     {
         $misi = Misi::find($id);
 
         $misi->delete();
-        return redirect()->route('visimisis')->with('successMisi', 'Data video berhasil dihapus!');
+        return redirect()->route('visimisis')->with('successMisi', 'Data visi berhasil dihapus!');
     }
 }

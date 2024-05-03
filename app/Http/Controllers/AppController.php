@@ -4,19 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Berita;
-use App\Models\Blog;
 use App\Models\Fasilitas;
 use App\Models\Kegiatan;
 use App\Models\Kontak;
 use App\Models\Misi;
 use App\Models\Pengumuman;
-use App\Models\Photo;
 use App\Models\Prestasi;
 use App\Models\Saran;
 use App\Models\Sejarah;
 use App\Models\TenagaKerja;
-use App\Models\Video;
 use App\Models\Visi;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 

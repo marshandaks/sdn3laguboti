@@ -7,7 +7,7 @@
             <div class="d-flex">
                 <a href="{{ route('atursejarah') }}">Sejarah</a>
                 <div class="mx-1">/</div>
-                <a href="">Buat Artikel</a>
+                <a href="">tulis sejarah</a>
             </div>
 
 
@@ -17,7 +17,7 @@
 
 
                 <div class="form-group mb-4">
-                    <label for="">Artikel berita</label>
+                    <label for="">Tulis sejarah</label>
                     <textarea name="desc" id="summernote">
                         {!! $artikel->desc !!}
                     </textarea>

@@ -117,7 +117,7 @@
     <div class="container py-4">
         <div class="d-flex justify-content-between">
             <div>
-                SDN 1 Kulauh Hulu
+                SDN 173551
             </div>
             <div class="d-flex">
                 <p class="me-4">Syarat Ketentuan</p>

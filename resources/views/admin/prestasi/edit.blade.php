@@ -15,7 +15,9 @@
             <form action="{{ route('prestasiDashboard.update', $prestasi->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group mb-4">
-                    <label for="">Masukan Judul Kegiatan</label>
+                    <label for="">Masukan Judul prestasi
+
+                    </label>
                     <input type="text" class="form-control @error('judul') is-invalid @enderror" name="judul"
                         value="{{ old('judul', $prestasi->judul) }}">
 
@@ -27,7 +29,9 @@
                 </div>
 
                 <div class="form-group mb-4">
-                    <label for="">Pilih Poto Kegiatan</label>
+                    <label for="">Pilih Poto prestasi
+
+                    </label>
                     <input type="hidden" name="old_image" value="{{ $prestasi->image }}">
                     <div>
                         <img src="{{ asset('storage/prestasi/' . $prestasi->image) }}" class="col-lg-4" alt="">

@@ -11,6 +11,8 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -42,7 +44,7 @@
             <a href="dashboard" class="brand-link d-flex justify-content-center ">
                 <img src="{{ asset('assets/icons/ic-logo.png') }}" height="45" alt="">
                 <span class="brand-text font-weight-light d-flex align-content-center flex-wrap pl-2">
-                    schoolSDN</span>
+                SDN 173551</span>
             </a>
 
             <!-- Sidebar -->
@@ -90,7 +92,7 @@
                         <!-- Move other links here -->
                         <li class="nav-item">
                             <a href="prestasiDashboard" class="nav-link">
-                                <i class="nav-icon fas fa-newspaper"></i>
+                                <i class="nav-icon  bi-mortarboard-fill"></i>
                                 <p>
                                     Prestasi
                                 </p>
@@ -98,7 +100,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="saranDashboard" class="nav-link">
-                                <i class="nav-icon fas fa-newspaper"></i>
+                                <i class="nav-icon bi bi-pen-fill"></i>
                                 <p>
                                     Saran
                                 </p>

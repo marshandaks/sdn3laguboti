@@ -12,7 +12,7 @@
                 {{-- VisiMisi --}}
                 <div class="col-lg-4">
                     <div class="card shadow-sm rounded-3 border-0" style="width: 20rem;">
-                        <img src="{{ asset('assets/images/il-photo-02.png') }}" class="card-img-top rounded-3"
+                        <img src="{{ asset('assets/images/il-photo-05.png') }}" class="card-img-top rounded-3"
                             alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Visi Misi</h5>
@@ -25,7 +25,7 @@
                 {{-- Sejarah --}}
                 <div class="col-lg-4">
                     <div class="card shadow-sm rounded-3 border-0" style="width: 20rem;">
-                        <img src="{{ asset('assets/images/il-photo-02.png') }}" class="card-img-top rounded-3"
+                        <img src="{{ asset('assets/images/il-photo-06.png') }}" class="card-img-top rounded-3"
                             alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Sejarah</h5>
@@ -38,7 +38,7 @@
                 {{-- kontak --}}
                 <div class="col-lg-4">
                     <div class="card shadow-sm rounded-3 border-0" style="width: 20rem;">
-                        <img src="{{ asset('assets/images/il-photo-02.png') }}" class="card-img-top rounded-3"
+                        <img src="{{ asset('assets/images/il-photo-08.png') }}" class="card-img-top rounded-3"
                             alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Kontak</h5>
@@ -51,7 +51,7 @@
                 {{-- Galeri --}}
                 <div class="col-lg-4">
                     <div class="card shadow-sm rounded-3 border-0" style="width: 20rem;">
-                        <img src="{{ asset('assets/images/il-photo-02.png') }}" class="card-img-top rounded-3"
+                        <img src="{{ asset('assets/images/il-photo-10.png') }}" class="card-img-top rounded-3"
                             alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Galeri</h5>
@@ -65,7 +65,7 @@
                 {{-- Saran --}}
                 <div class="col-lg-4">
                     <div class="card shadow-sm rounded-3 border-0" style="width: 20rem;">
-                        <img src="{{ asset('assets/images/il-photo-02.png') }}" class="card-img-top rounded-3"
+                        <img src="{{ asset('assets/images/il-photo-09.png') }}" class="card-img-top rounded-3"
                             alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Saran</h5>
@@ -75,22 +75,11 @@
                     </div>
                 </div>
                 {{-- Saran --}}
-                <div class="col-lg-4">
-                    <div class="card shadow-sm rounded-3 border-0" style="width: 20rem;">
-                        <img src="{{ asset('assets/images/il-photo-02.png') }}" class="card-img-top rounded-3"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Berita</h5>
-                            <p class="card-text">Atur dan kelola saran</p>
-                            <a href="{{ route('beritaDashboard') }}" class="btn btn-primary">detail</a>
-                        </div>
-                    </div>
-                </div>
 
                 {{-- Pengumuman --}}
                 <div class="col-lg-4">
                     <div class="card shadow-sm rounded-3 border-0" style="width: 20rem;">
-                        <img src="{{ asset('assets/images/il-photo-02.png') }}" class="card-img-top rounded-3"
+                        <img src="{{ asset('assets/images/il-photo-11.png') }}" class="card-img-top rounded-3"
                             alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Pengumuman</h5>
@@ -103,7 +92,7 @@
 
                 <div class="col-lg-4">
                     <div class="card shadow-sm rounded-3 border-0" style="width: 20rem;">
-                        <img src="{{ asset('assets/images/il-photo-02.png') }}" class="card-img-top rounded-3"
+                        <img src="{{ asset('assets/images/il-photo-07.png') }}" class="card-img-top rounded-3"
                             alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Prestasi</h5>
@@ -116,7 +105,7 @@
                 {{-- Tenaga Kerja --}}
                 <div class="col-lg-4">
                     <div class="card shadow-sm rounded-3 border-0" style="width: 20rem;">
-                        <img src="{{ asset('assets/images/il-photo-02.png') }}" class="card-img-top rounded-3"
+                        <img src="{{ asset('assets/images/il-photo-12.png') }}" class="card-img-top rounded-3"
                             alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Tenaga Kerja</h5>

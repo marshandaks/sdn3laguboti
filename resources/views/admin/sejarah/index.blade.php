@@ -5,7 +5,7 @@
         <div class="container col-xxl-8 py-5">
             <h4 class="fw-bold mb-3">Management Sejarah</h4>
             @foreach ($artikels as $artikel)
-                <a href="{{ route('atursejarah.edit', $artikel->id) }}" class="btn btn-warning">Edit</a>
+                <a href="{{ route('atursejarah.edit', $artikel->id) }}"class="btn btn-warning">Edit</a>
             @endforeach
 
             {{-- Pesan Sukses --}}

@@ -16,7 +16,7 @@
             <form action="{{ route('prestasiDashboard.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group mb-4">
-                    <label for="">Masukan Judul Kegiatan</label>
+                    <label for="">Masukan Judul prestasi</label>
                     <input type="text" class="form-control @error('judul') is-invalid @enderror" name="judul"
                         value="{{ old('judul') }}">
 
@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="form-group mb-4">
-                    <label for="">Pilih Poto Kegiatan</label>
+                    <label for="">Pilih Poto prestasi</label>
                     <input type="file" class="form-control @error('image') is-invalid @enderror" name="image"
                         value="{{ old('image') }}">
 
