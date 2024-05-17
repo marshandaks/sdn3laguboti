@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('jabatan')->nullable();
             $table->string('wali_kelas')->nullable();
             $table->date('tanggal_lahir')->nullable();
-            $table->string('no_telpon')->nullable();
             $table->timestamps();
         });
     }

@@ -16,7 +16,7 @@
     </div>
     <section id="detail">
         <div class="container col-xxl-8 ">
-            <img class="img-fluid mb-3" src="{{ asset('storage/prestasi/' . $artikel->image) }}" alt="">
+            <img width="1000" height="500" src="{{ asset('storage/prestasi/' . $artikel->image) }}" alt="">
             <div class="konten-prestasi">
                 <h4 class="fw-bold mb-3 text-dark">{{ $artikel->judul }}</h4>
                 <p class="text-secondary">{!! $artikel->desc !!}</p>

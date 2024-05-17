@@ -5,7 +5,8 @@
         <div class="container col-xxl-6 py-5">
 
             <h3 class="fw-bold mb-3">Login</h3>
-            <form action="" method="POST">
+            <div id="errorMessage" class="text-danger" style="display: none;">Email atau password salah.</div>
+            <form action="" method="POST" id="loginForm">
                 @csrf
                 <div class="form-group mb-3">
                     <label for="">Masukan Email</label>
@@ -20,4 +21,22 @@
             </form>
         </div>
     </section>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            var errorMessage = document.getElementById('errorMessage');
+            errorMessage.style.display = 'none'; // Sembunyikan pesan kesalahan setiap kali formulir dikirim
+            // Lakukan validasi email dan password di sini
+            var email = document.querySelector('input[name="email"]').value;
+            var password = document.querySelector('input[name="password"]').value;
+
+            // Contoh validasi sederhana, Anda harus menggunakan validasi yang lebih aman di produksi
+            if (email !== 'sdn173551@gmail.com' || password !== 'sdn173551') {
+                errorMessage.style.display = 'block'; // Tampilkan pesan kesalahan
+                setTimeout(function() {
+                    errorMessage.style.display = 'none'; // Sembunyikan pesan kesalahan setelah 8 detik
+                }, 8000);
+                event.preventDefault(); // Mencegah formulir dikirim
+            }
+        });
+    </script>
 @endsection

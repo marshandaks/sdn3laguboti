@@ -27,7 +27,7 @@ class PrestasiController extends Controller
     {
         $rules = [
             'judul' => 'required',
-            'image' => 'required|max:1000|mimes:jpg,jpeg,png,webp',
+            'image' => 'required|max:5000|mimes:jpg,jpeg,png,webp',
             'desc' => 'required|min:20',
         ];
 

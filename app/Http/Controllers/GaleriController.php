@@ -24,7 +24,7 @@ class GaleriController extends Controller
     {
         $rules = [
             'judul' => 'required',
-            'image' => 'required|max:1000|mimes:jpg,jpeg,png,webp',
+            'image' => 'required|max:5000|mimes:jpg,jpeg,png,webp',
         ];
 
         $messages = [
@@ -52,14 +52,14 @@ class GaleriController extends Controller
 
         # Jika ada image baru
         if ($request->hasFile('image')) {
-            $fileCheck = 'required|max:1000|mimes:jpg,jpeg,png';
+            $fileCheck = 'required|max:5000|mimes:jpg,jpeg,png';
         } else {
             $fileCheck = '';
         }
 
         $rules = [
             'judul' => 'required',
-            'image' => 'max:1000|mimes:jpg,jpeg,png,webp',
+            'image' => 'max:5000|mimes:jpg,jpeg,png,webp',
         ];
 
         $messages = [
@@ -108,7 +108,7 @@ class GaleriController extends Controller
     {
         $rules = [
             'judul' => 'required',
-            'image' => 'required|max:1000|mimes:jpg,jpeg,png,webp',
+            'image' => 'required|max:5000|mimes:jpg,jpeg,png,webp',
         ];
 
         $messages = [
@@ -136,14 +136,14 @@ class GaleriController extends Controller
 
         # Jika ada image baru
         if ($request->hasFile('image')) {
-            $fileCheck = 'required|max:1000|mimes:jpg,jpeg,png';
+            $fileCheck = 'required|max:5000|mimes:jpg,jpeg,png';
         } else {
             $fileCheck = '';
         }
 
         $rules = [
             'judul' => 'required',
-            'image' => 'max:1000|mimes:jpg,jpeg,png,webp',
+            'image' => 'max:5000|mimes:jpg,jpeg,png,webp',
         ];
 
         $messages = [

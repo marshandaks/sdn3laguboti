@@ -26,7 +26,7 @@ class PengumumanController extends Controller
     {
         $rules = [
             'judul' => 'required',
-            'image' => 'required|max:1000|mimes:jpg,jpeg,png,webp',
+            'image' => 'required|max:5000|mimes:jpg,jpeg,png,webp',
             'desc' => 'required|min:20',
         ];
 
@@ -95,7 +95,7 @@ class PengumumanController extends Controller
 
         # Jika ada image baru
         if ($request->hasFile('image')) {
-            $fileCheck = 'required|max:1000|mimes:jpg,jpeg,png';
+            $fileCheck = 'required|max:5000|mimes:jpg,jpeg,png';
         } else {
             $fileCheck = '';
         }

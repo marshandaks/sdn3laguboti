@@ -20,11 +20,10 @@ class TenagaKerjaController extends Controller
     {
         $rules = [
             'nama' => 'required',
-            'image' => 'required|max:1000|mimes:jpg,jpeg,png,webp',
+            'image' => 'required|max:5000|mimes:jpg,jpeg,png,webp',
             'jabatan' => 'required',
             'wali_kelas' => 'required',
             'tanggal_lahir' => 'required',
-            'no_telpon' => 'required',
         ];
 
         $messages = [
@@ -33,7 +32,6 @@ class TenagaKerjaController extends Controller
             'jabatan.required' => 'jabatan wajib diisi!',
             'wali_kelas.required' => 'wali kelas wajib diisi!',
             'tanggal_lahir.required' => 'tanggal lahir wajib diisi!',
-            'no_telpon.required' => 'no telpon wajib diisi!',
         ];
 
         $this->validate($request, $rules, $messages);
@@ -48,7 +46,6 @@ class TenagaKerjaController extends Controller
             'jabatan' => $request->jabatan,
             'wali_kelas' => $request->wali_kelas,
             'tanggal_lahir' => $request->tanggal_lahir,
-            'no_telpon' => $request->no_telpon,
         ]);
 
         return redirect()->route('tenagaKerjaDashboard')->with('success', 'Data tenagaKerja berhasil disimpan!');
@@ -60,18 +57,17 @@ class TenagaKerjaController extends Controller
 
         # Jika ada image baru
         if ($request->hasFile('image')) {
-            $fileCheck = 'required|max:1000|mimes:jpg,jpeg,png';
+            $fileCheck = 'required|max:5000|mimes:jpg,jpeg,png';
         } else {
             $fileCheck = '';
         }
 
         $rules = [
             'nama' => 'required',
-            'image' => 'required|max:1000|mimes:jpg,jpeg,png,webp',
+            'image' => 'required|max:5000|mimes:jpg,jpeg,png,webp',
             'jabatan' => '',
             'wali_kelas' => 'required',
             'tanggal_lahir' => 'required',
-            'no_telpon' => 'required',
         ];
 
         $messages = [
@@ -80,7 +76,6 @@ class TenagaKerjaController extends Controller
             'jabatan.required' => 'jabatan wajib diisi!',
             'wali_kelas.required' => 'wali kelas wajib diisi!',
             'tanggal_lahir.required' => 'tanggal lahir wajib diisi!',
-            'no_telpon.required' => 'no telpon wajib diisi!',
         ];
 
         $this->validate($request, $rules, $messages);
@@ -107,7 +102,6 @@ class TenagaKerjaController extends Controller
             'jabatan' => $request->jabatan,
             'wali_kelas' => $request->wali_kelas,
             'tanggal_lahir' => $request->tanggal_lahir,
-            'no_telpon' => $request->no_telpon,
         ]);
 
         return redirect()->route('tenagaKerjaDashboard')->with('success', 'Data tenagaKerja berhasil diupdate!');

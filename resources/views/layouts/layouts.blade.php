@@ -92,7 +92,7 @@
                     <h4>Alamat</h4>
                     <p>
                         Alamat: <br>
-                        Jln. Ahmad Yani , Desa Pasar Lagubotu<br>
+                        Jln. Ahmad Yani , Desa Pasar Laguboti<br>
                         Kec. Laguboti, Kab. Toba <br>
                         Prov. Sumatera Utara<br>
                     </p>

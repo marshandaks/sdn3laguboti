@@ -2,10 +2,17 @@
 
 @section('content')
     <section id="team" class="team">
+        <div class="position-relative" style="height: 6cm; overflow: hidden; margin-top: -2cm;">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.5);"></div>
+            <img src="{{ asset('assets/images/il-photo-01.png') }}" class="img-fluid float-right" alt="Visi Misi Image" style="width: 100%; height: auto; object-fit: cover;">
+            <div class="position-absolute top-50 start-50 translate-middle text-white" style="text-align: center; width: 100%; transform: translate(-50%, -50%); z-index: 1;">
+                <h2 class="">Tenaga Kerja SDN 173551</h2>
+            </div>
+        </div>
         <div class="container" data-aos="fade-up">
 
             <div class="section-header">
-                <h2>Tenaga Kerja</h2>
+                <h2></h2>
             </div>
 
             <div class="row gy-4">
@@ -22,17 +29,13 @@
                                     <tbody class="text-start">
 
                                         <tr>
-                                            <th scope="row">Tempat Lahir</th>
+                                            <th scope="row">tanggal Lahir</th>
                                             <td>{{ $item->tanggal_lahir }}</td>
                                         </tr>
 
                                         <tr>
                                             <th scope="row">Wali Kelas</th>
                                             <td colspan="2">{{ $item->wali_kelas }}</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Nomor Hp</th>
-                                            <td colspan="2">{{ $item->no_telpon }}</td>
                                         </tr>
                                     </tbody>
                                 </table>

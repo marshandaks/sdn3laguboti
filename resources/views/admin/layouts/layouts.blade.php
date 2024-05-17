@@ -33,6 +33,17 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 
+    <style>
+        .modal-dialog-centered {
+            display: flex;
+            align-items: center;
+            min-height: calc(100% - 1rem);
+        }
+
+        .modal-dialog {
+            max-width: 500px;
+        }
+    </style>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -88,7 +99,6 @@
                                 </p>
                             </a>
                         </li>
-                        </li>
                         <!-- Move other links here -->
                         <li class="nav-item">
                             <a href="prestasiDashboard" class="nav-link">
@@ -126,10 +136,9 @@
 
                         <div class="d-flex">
                             @auth
-                                <form action="/logout" method="POST">
-                                    @csrf
-                                    <button class="btn btn-dark" type="submit">Logout</button>
-                                </form>
+                                <button class="btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                                    Logout
+                                </button>
                             @else
                                 <a class="btn btn-danger" href="{{ route('login') }}">Login</a>
                             @endauth
@@ -146,6 +155,28 @@
             @yield('content')
         </div>
 
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logoutModalLabel">Konfirmasi Keluar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Apakah Anda yakin ingin keluar?
+                </div>
+                <div class="modal-footer">
+                    <form action="/logout" method="POST" class="d-inline">
+                        @csrf
+                        <button type="submit" class="btn btn-danger">Ya</button>
+                    </form>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- jQuery -->

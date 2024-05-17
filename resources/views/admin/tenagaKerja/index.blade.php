@@ -28,7 +28,6 @@
                             <th>Jabatan</th>
                             <th>Wali Kelas</th>
                             <th>Tanggal Lahir</th>
-                            <th>No Telepon</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -54,9 +53,6 @@
                                 </td>
                                 <td>
                                     {{ $item->tanggal_lahir }}
-                                </td>
-                                <td>
-                                    {{ $item->no_telpon }}
                                 </td>
 
                                 <td>
@@ -110,10 +106,6 @@
                             <label for="tenagaKerja">tanggal_lahir</label>
                             <input type="date" name="tanggal_lahir" class="form-control">
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="tenagaKerja">no_telpon</label>
-                            <input type="text" name="no_telpon" class="form-control">
-                        </div>
 
                         <button type="submit" class="btn btn-primary">Simpan</button>
                     </form>
@@ -166,10 +158,6 @@
                             <div class="form-group mb-3">
                                 <label for="tenagaKerja">tanggal_lahir</label>
                                 <input type="date" name="tanggal_lahir" class="form-control">
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="tenagaKerja">no_telpon</label>
-                                <input type="text" name="no_telpon" class="form-control">
                             </div>
 
                             <button type="submit" class="btn btn-primary">Update</button>

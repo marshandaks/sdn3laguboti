@@ -19,19 +19,6 @@
                 </div>
             @endif
 
-            {{-- manampilkan error validasi --}}
-            @if (count($errors) > 0)
-                <div class="alert-dismissible fade show gap-3">
-                    <ul>
-                        @foreach ($erros as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
-                        data-bs-target=".alert"></button>
-                </div>
-            @endif
-
 
             <div class="table-responsive py-3">
                 <table class="table table-bordered">

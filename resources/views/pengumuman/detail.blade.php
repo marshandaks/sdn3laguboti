@@ -16,7 +16,7 @@
     </div>
     <section class="py-5" id="detail">
         <div class="container col-xxl-8 py-5">
-            <img class="img-fluid mb-3" src="{{ asset('storage/pengumuman/' . $artikel->image) }}" alt="">
+            <img width="1000" height="700" src="{{ asset('storage/pengumuman/' . $artikel->image) }}" alt="">
             <div class="konten-pengumuman">
                 <p class="mb-3 text-secondary">21/04/2023</p>
                 <h4 class="fw-bold mb-3 text-dark">{{ $artikel->judul }}</h4>
